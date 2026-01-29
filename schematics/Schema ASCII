@@ -1,0 +1,22 @@
+       _______________________
+      |                       |
+      |   DAISY SEED v1.1     |
+      |_______________________|
+                  |
+ [POWER & GND]    |
+  Pin 38 (3V3) ---+---> VCC (OLED, Pots)
+  Pin 40 (GND) ---+---> GND (OLED, Pots, Boutons)
+  Pin 20 (AGND) --+---> GND (Jack Audio)
+                  |
+ [I2C / ÉCRAN]    |
+  Pin 12 (SCL) ---+---> OLED SCL
+  Pin 13 (SDA) ---+---> OLED SDA
+                  |
+ [AUDIO]          |
+  Pin 18 (OUT1) --+---> Jack Tip (L)
+  Pin 19 (OUT2) --+---> Jack Tip (R)
+                  |
+ [CONTROLES]      |
+  Pin 22 (ADC0) --+---> Pot 1 (BPM) [Milieu]
+  Pin 23 (ADC1) --+---> Pot 2 (Filtre) [Milieu]
+  Pin 35 (D28)  --+---> Bouton --- GND
