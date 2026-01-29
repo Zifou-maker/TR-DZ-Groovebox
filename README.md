@@ -5,15 +5,21 @@
 **TR-DZ** est un projet de performance dédié à la création de Kicks Tech House percutants et organique, basé sur le microcontrôleur **Daisy Seed**. Conçue pour la **Tech House**, elle génère des percussions synthétiques en temps réel avec un moteur audio 48kHz / 24-bit. Elle combine une synthèse analogique modélisée (DSP) avec une interface de contrôle avancée via multiplexage.
 ---
 
-## 🚀 Fonctionnalités Actuelles (Firmware V8.0)
+## 🚀 Fonctionnalités Actuelles (Firmware V9.1)
 
 ### Moteur Sonore (Synthesis Engine)
-* **Kick :** Oscillateur Sinusoïdal + Enveloppe de Pitch (Punch) + Enveloppe d'Amplitude.
-* **Snare / Clap :** Mix hybride (Oscillateur Triangle + Bruit filtré passe-bande) sur les temps 2 et 4 (Backbeat).
-* **Hi-Hat :** Bruit blanc filtré passe-haut, joué automatiquement sur les contre-temps (Offbeat).
-* **Master Effects :**
-    * **Filtre SVF (State Variable Filter) :** Filtre passe-bas résonant (contrôlable sur le Kick).
-    * **Soft Clipper :** Limiteur en sortie pour éviter la saturation numérique.
+* **Kick :** Synthèse Sinusoïdale + Enveloppe de Pitch (Punch).
+* **Bassline (Nouveau) :** Synthé Monophonique (Onde Carrée/Square) avec filtre résonant lié à l'enveloppe ("Acid style").
+* **Snare / Clap :** Mix hybride (Triangle + Noise) sur les temps 2 et 4.
+* **Hi-Hat :** Bruit blanc avec **Swing** réglable (Groove House).
+
+### Performance & Effets
+* **Aggressive Filter :** Filtre Passe-Bas (Low Pass) couvrant tout le spectre (20Hz - 12kHz). Contrôle simultané du Kick et de la brillance de la Basse.
+* **Soft Clipper :** Limiteur en sortie (Mastering intégré).
+
+### Interface
+* **Séquenceur :** Kick séquençable manuellement. Basse et Percussions en auto-génération.
+* **Visualisation :** Écran OLED SH1106 avec suivi des pistes et VU-mètre.
 
 ### Interface & Séquenceur
 * **Séquenceur 16 pas :**
