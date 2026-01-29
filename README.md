@@ -1,58 +1,33 @@
-# TR-DZ: The Ultimate Tech House Kick Synthesizer
-
+code Markdown
+downloadcontent_copy
+expand_less
+# TR-DZ : The Ultimate Tech House Kick Synthesizer
 **Powered by Daisy Seed (Electro-Smith)**
 
-TR-DZ is a performance instrument dedicated to creating punchy and organic Tech House kicks. Built on the Daisy Seed platform, it combines modeled analog synthesis (DSP) with an advanced control interface via multiplexing.
+TR-DZ est un instrument de performance dédié à la création de Kicks Tech House percutants et organiques. Conçu sur la plateforme Daisy Seed, il combine une synthèse analogique modélisée (DSP) avec une interface de contrôle avancée via multiplexage.
 
-## ✨ Key Features
+## ✨ Points Forts (Features)
+*   **Dual-Envelope Engine :** Gestion indépendante de l'enveloppe d'amplitude (le corps) et de l'enveloppe de pitch (le "punch").
+*   **Rumble Generator :** Algorithme DSP interne de reverb + distorsion pour le sub-bass techno, contrôlable par un seul potentiomètre.
+*   **K/B Lock System :** Architecture logicielle permettant de verrouiller le Kick et la Basse tout en changeant les kits de percussions à la volée.
+*   **Interface Hybride :** 2 écrans OLED (Waveform Scope + Mixer View) et 12 Faders physiques.
 
-* **Dual-Envelope Engine:** Independent management of the amplitude envelope (the body) and the pitch envelope (the "punch").
+## 🛠️ Spécifications Techniques
+**Hardware**
+*   **Cœur :** Daisy Seed (STM32H7) - 480MHz / 24-bit audio.
+*   **Multiplexage :** CD4051 (Expansion pour 36 potentiomètres).
+*   **Alimentation :** Module MB102 filtré (3.3V Logic) pour réduction de bruit.
+*   **Audio :** Sortie Stéréo Neutrik + Cue Output.
 
-* **Analog-Style Saturation:** Non-linear saturation algorithm based on the arctangent function ($\arctan$) for authentic harmonic warmth.
-
-* **Ghost Mode:** Organic variation algorithm introducing subtle micro-differences on each hit to avoid monotony.
-
- * **16-Parameter Interface:** Full control of the kick drum's DNA via the CD4051 multiplexer.
-
-* **OLED UI:** Real-time visual feedback on the SH1106 screen.
-
-## 🛠️ Technical Specifications
-
-### Hardware
-* **Core:** Daisy Seed (STM32H7) - 480MHz / 24-bit audio.
-
-* **Multiplexing:** CD4051 (Expansion via 8 to 16 potentiometers).
-
- * **Display:** 1.3" OLED I2C (SH1106).
-* **Power Supply:** Rail filtered via AGND for complete radio silence.
-
-### Signal Flow (DSP)
-* **Oscillator:** Sliding frequency Triangle/Sine waveform.
-* **Impact:** Ultra-fast Pitch Envelope (50ms) for transient snap.
-* **Processing:** Saturation, Soft-clipping, Resonant Filter, VCA.
+**Signal Flow (DSP)**
+1.  **Oscillateur :** Waveform Triangle/Sinus à fréquence glissante.
+2.  **Impact :** Pitch Envelope ultrarapide (50ms).
+3.  **Traitement :** Saturation Soft-clipping -> Filtre Résonant -> VCA -> Rumble Send.
 
 ## 🚀 Installation & Build
-
-1. **Prerequisites:** Arduino IDE with DaisyDuino support.
-
-2. **Wiring:** See the `/schematics` folder for CD4051 connections.
-3. **Flash:** Upload `TR-DZ_V5.1.ino` to your Daisy Seed.
-
-## 🗺️ Roadmap
-
--  [x] Analog input stabilization (Hysteresis/Smoothing).
-
-- [x] Dual-Envelope audio engine.
-
-- [ ] Euclidean Sequencing implementation.
-
-- [ ] Snapshot (Preset) saving.
-
-- [ ] Brushed aluminum chassis design.
+1.  **Prérequis :** VS Code avec PlatformIO ou Arduino IDE (DaisyDuino).
+2.  **Bibliothèques :** `DaisySP`, `U8g2` (pour OLED).
+3.  **Flash :** Connectez la Daisy en mode DFU et téléversez `TR-DZ_Firmware_v0.1`.
 
 ## 🤝 Contribution
-
-Sound design and DSP optimization ideas are welcome. Feel free to open an issue or submit a pull request.
-
----
-*Developed by D.ZIF*
+Projet Open Source. Les Pull Requests pour l'optimisation des algorithmes de "Generative Sequencing" sont les bienvenues.
