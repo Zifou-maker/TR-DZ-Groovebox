@@ -1,5 +1,5 @@
 # 🥁 TR-DZ : Daisy Seed Tech House Drum Machine
-![Prototype TR-DZ](tr-dz-prototype.jpg)`
+![Prototype TR-DZ](tr-dz-prototype.jpg)
 ![Version](https://img.shields.io/badge/firmware-v8.0-blue) ![Platform](https://img.shields.io/badge/platform-Daisy%20Seed-green) ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
 **TR-DZ** est un projet de performance dédié à la création de Kicks Tech House percutants et organique, basé sur le microcontrôleur **Daisy Seed**. Conçue pour la **Tech House**, elle génère des percussions synthétiques en temps réel avec un moteur audio 48kHz / 24-bit. Elle combine une synthèse analogique modélisée (DSP) avec une interface de contrôle avancée via multiplexage.
