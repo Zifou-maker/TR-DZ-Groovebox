@@ -11,10 +11,10 @@ The multiplexer allows us to read 16 potentiometers using only one analog pin on
 | **VCC** | 3V3 Digital (Pin 38) | Power |
 | **GND** | DGND (Pin 40) | Ground |
 | **SIG** | AGND (Pin 20) / A0 (Pin 22) | Analog Signal Output |
-| **S0** | D0 (Pin 31) | Address Select 0 |
-| **S1** | D1 (Pin 32) | Address Select 1 |
-| **S2** | D2 (Pin 33) | Address Select 2 |
-| **S3** | D3 (Pin 34) | Address Select 3 |
+| **S0** | D0 (Pin 1) | Address Select 0 |
+| **S1** | D1 (Pin 2) | Address Select 1 |
+| **S2** | D2 (Pin 3) | Address Select 2 |
+| **S3** | D3 (Pin 4) | Address Select 3 |
 | **EN** | DGND (Pin 40) | Enable (Active Low) |
 
 ### Potentiometer Mapping (Channels)
