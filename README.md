@@ -40,7 +40,7 @@
 
 - `src/`: Core C++ firmware (libdaisy / daisysp).
 - `TR-DZ_V11.ino`: The main integrated engine.
-- `Schematics/`: [Full wiring and pinout documentation](./Schematics/WIRING.md)
+- `Schematics/`: [Full wiring and pinout documentation](./Schematics/Wiring.md)
 - `SPECIFICATIONS.md`: Deep dive into the AI generative roadmap and DSP logic.
 
 ---
